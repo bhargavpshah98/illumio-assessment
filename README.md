@@ -1,4 +1,4 @@
-# illumio-assessment
+# Illumio-assessment
 
 ## Problem Statement
 Write a program that can parse a file containing flow log data and maps each row to a tag based on a lookup table. The lookup table is defined as a csv file, and it has 3 columns, dstport, protocol, and tag. The dstport and protocol combination decide what tag can be applied.   
