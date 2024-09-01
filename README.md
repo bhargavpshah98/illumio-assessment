@@ -39,3 +39,5 @@ The logic that is used in developing the code is as follows:
 ![Alt text](https://github.com/user-attachments/assets/cfd44f9b-398f-40f4-8527-3c3dc4be2c4e)
 
 I hope everything is clear. Please don't hesitate to reach out or ask any questions.
+
+Have a great day ahead!
