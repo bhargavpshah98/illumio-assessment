@@ -20,8 +20,8 @@ The logic that is used in developing the code is as follows:
 - defaultdict is used for counting the tags and port_protocol to its corresponding values and it also makes the code efficient.
 - we are now parsing the log file which is input.txt (could be any other name as well) using read mode. 
   I have made the following **assumptions** of the data as per the AWS reference for flow logs and the sample input data given:
-    1. 6th column is dstport
-    2. 8th column is protocol number
+    1. 6th column in input log data is dstport
+    2. 8th column in input log data is protocol number
   Once, we have received the above values, it is mapped with the protocol name and lookup table, and the count for the required output starts from here.
 - tag counts are written in the tag_counts.csv file using Python's write function.
 - port, protocol, and its counts are written in port_protocol_counts.csv file using the inbuilt file write function.
