@@ -35,7 +35,7 @@ The logic that is used in developing the code is as follows:
   - This would produce 2 output files of tag_counts.csv and port_protocol_counts.csv
 
 ### Although I have not included the output files in the repository, I have got this output from it
-![Alt text]( ![ss1](https://github.com/user-attachments/assets/e454ad61-d67e-4b99-8224-66208cb743c5.jpg))
-![Alt text]( ![ss2](https://github.com/user-attachments/assets/cfd44f9b-398f-40f4-8527-3c3dc4be2c4e.jpg))
+![Alt text](https://github.com/user-attachments/assets/e454ad61-d67e-4b99-8224-66208cb743c5)
+![Alt text](https://github.com/user-attachments/assets/cfd44f9b-398f-40f4-8527-3c3dc4be2c4e)
 
 I hope everything is clear. Please don't hesitate to reach out or ask any questions.
