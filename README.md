@@ -36,7 +36,7 @@ The logic that is used in developing the code is as follows:
   - For Testing, run: **python3 -m unittest discover tests**
   - Unit Tests are currently covered for Protocol Conversion and Tagging as well as counting, to make the code more reliable
 
-### Although I have not included the output files in the repository, these are the screenshots of it
+### I have not included the output files in the repository, these are the screenshots of it
 ![Alt text](https://github.com/user-attachments/assets/e454ad61-d67e-4b99-8224-66208cb743c5)
 ![Alt text](https://github.com/user-attachments/assets/cfd44f9b-398f-40f4-8527-3c3dc4be2c4e)
 
