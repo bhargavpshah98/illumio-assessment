@@ -32,7 +32,7 @@ The logic that is used in developing the code is as follows:
   - Clone the repository
   - go to the folder where you have cloned this repository and run:
     **python3 main.py**
-  - This would produce 2 output files of tag_counts.csv and port_protocol_counts.csv
+  - This would produce 2 output files of "tag_counts.csv" and "port_protocol_counts.csv"
 
 ### Although I have not included the output files in the repository, I have got this output from it
 ![Alt text](https://github.com/user-attachments/assets/e454ad61-d67e-4b99-8224-66208cb743c5)
