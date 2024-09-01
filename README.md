@@ -6,18 +6,18 @@ Write a program that can parse a file containing flow log data and maps each row
 ## Solution
 
 ### File Structure
-- input.txt is the simple text file that contains sample log data
-- lookup_table.csv is a given sample file that contains dstport, protocol, and tag
-- main.py is the file that contains logic to produce the output files of tag_counts.csv and port_protocol_counts.csv
-- tag_counts.csv file contains the number of counts per tag, and if the tag is not found then it returns untagged.
-- port_protocol_counts.csv file measures the count of combination from port and protocols from the log data.
+- **input.txt** is the simple text file that contains sample log data.
+- **lookup_table.csv** is a given sample file that contains dstport, protocol, and tag.
+- **main.py** is the file that contains logic to produce the output files of tag_counts.csv and port_protocol_counts.csv
+- **tag_counts.csv** is the **output** file containing the number of counts per tag, and if the tag is not found then it returns untagged.
+- **port_protocol_counts.csv** is the **output** file that measures the count of combination from port and protocols from the log data.
 
 ### Logic and Assumptions
 The logic that is used in developing the code is as follows:
 - tags are produced based on the combination of dstport and protocol, which are saved in map data structure as:
-    lookup_table[(dstport, protocol)] = tag
-- get_protocol_name function is used for mapping the protocol number with its corresponding protocol name, which is required in the port_protocol_counts.csv file
-- defaultdict is used for counting the tags and port_protocol to its corresponding values and it also makes the code efficient.
+    **lookup_table[(dstport, protocol)] = tag**
+- **get_protocol_name** function is used for mapping the protocol number with its corresponding protocol name, which is required in the port_protocol_counts.csv file
+- **defaultdict** is used for counting the tags and port_protocol to its corresponding values and it also makes the code efficient.
 - we are now parsing the log file which is input.txt (could be any other name as well) using read mode. 
   I have made the following **assumptions** of the data as per the AWS reference for flow logs and the sample input data given:
     1. 6th column in input log data is dstport
@@ -32,7 +32,7 @@ The logic that is used in developing the code is as follows:
   - Clone the repository
   - go to the folder where you have cloned this repository and run:
     **python3 main.py**
-  - This would produce 2 output files of "tag_counts.csv" and "port_protocol_counts.csv"
+  - This would produce 2 output files "tag_counts.csv" and "port_protocol_counts.csv"
 
 ### Although I have not included the output files in the repository, these are the screenshots of it
 ![Alt text](https://github.com/user-attachments/assets/e454ad61-d67e-4b99-8224-66208cb743c5)
