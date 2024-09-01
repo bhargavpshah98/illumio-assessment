@@ -33,10 +33,31 @@ The logic that is used in developing the code is as follows:
   - go to the folder where you have cloned this repository and run:
     **python3 main.py**
   - This would produce 2 output files "tag_counts.csv" and "port_protocol_counts.csv"
+  - For Testing, run: **python3 -m unittest discover tests**
+  - Unit Tests are currently covered for Protocol Conversion and Tagging as well as counting, to make the code more reliable
 
 ### Although I have not included the output files in the repository, these are the screenshots of it
 ![Alt text](https://github.com/user-attachments/assets/e454ad61-d67e-4b99-8224-66208cb743c5)
 ![Alt text](https://github.com/user-attachments/assets/cfd44f9b-398f-40f4-8527-3c3dc4be2c4e)
+
+### Current Code version handling capacity
+
+**Version Handling**: The current implementation is designed to handle version 2 of the AWS VPC logs. If you need to process logs from different versions, you may need to adjust the parsing logic or extend the functionality based on the specific format of those versions.
+
+**Lookup Table Integration**: The code loads a lookup table from a CSV file, which maps destination ports and protocols to specific tags. This mapping is used to tag each log entry accordingly.
+
+**Protocol Conversion**: A function is included to convert protocol numbers to their corresponding names (e.g., TCP, UDP, ICMP). This conversion is necessary for matching logs with the lookup table.
+
+**Tagging and Counting**: The code processes each log entry to:
+Determine the appropriate tag based on the destination port and protocol.
+Count occurrences of each tag and each port/protocol combination.
+
+**Testing**: 
+The tests ensure that the code performs as expected under predefined conditions. For different log versions or formats, additional adjustments and tests may be needed.
+
+**Output Generation**: Results are saved to two CSV files:
+tag_counts.csv: Contains counts of each tag, including an "Untagged" category for entries not found in the lookup table.
+port_protocol_counts.csv: Lists counts of occurrences for each port/protocol combination.
 
 I hope everything is clear. Please don't hesitate to reach out or ask any questions.
 
